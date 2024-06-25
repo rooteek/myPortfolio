@@ -1,0 +1,346 @@
+@media screen and (max-width:1280px) {
+    .heading-container a {
+        margin-left: 10px;
+    }
+
+    .heading-container input {
+        margin-left: 20px;
+    }
+
+    .profile-first-container {
+        /* border: 2px solid red; */
+    }
+
+    .profile-first-container>div img {
+        left: 50%;
+        top: -50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width:1080px) {
+
+    .heading-logo {
+        /* border: 2px solid red; */
+        font-size: 14px;
+    }
+
+    header .heaing-drop-down {
+        /* border: 2px solid red; */
+        display: inline;
+        cursor: pointer;
+        width: 30px;
+    }
+
+    .heading-container {
+        display: none;
+    }
+
+    .heading-menu-show {
+        display: flex;
+    }
+
+    /* -------------------- About Page ------------------- */
+    .about-container {
+        /* border: 2px solid red; */
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .about-me-details {
+        /* border: 2px solid red; */
+        width: 50%;
+
+    }
+
+    .about-me .about-me-details h1 {
+        /* width: 300px; */
+        font-size: 35px;
+    }
+
+    .about-me .about-me-details p {
+        font-size: 13px;
+    }
+
+    .about-me-img img {
+        width: 400px;
+    }
+
+    /* ----------------- Projects ----------------- */
+    .projects .heading {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+
+    .projects .project-list {
+        /* border: 2px solid red; */
+        width: 100vw;
+    }
+
+    .project-details {
+        width: 330px;
+    }
+
+    .project-details p {
+        /* border: 2px solid red; */
+        font-size: 12px;
+        padding: 2px;
+        width: 330px;
+    }
+
+    .project-details a {
+        font-size: 15px;
+    }
+
+    .projects .project-list button {
+        padding: 8px 25px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .profile-first-container>div img {
+        top: -50%;
+    }
+
+    .heading-menu-show {
+        right: 10%;
+    }
+
+    header input {
+        display: none;
+    }
+
+    .about-container {
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+
+    .about-me {
+        width: 100%;
+        /* border: 2px solid blue; */
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-me-img {
+        /* border: 2px solid red; */
+        width: 50%;
+    }
+
+    .about-me-img img {
+        width: 100%;
+
+    }
+
+    .projects .project-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects>h3 {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .projects>button {
+        font-size: 12px;
+        width: 130px;
+        height: 30px;
+        padding: 2px 0;
+        margin-top: 10px;
+    }
+
+    .about-me-img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .about-container {
+        flex-direction: column;
+        /* border: 2px solid red; */
+        overflow-y: scroll;
+    }
+
+    .about-me-img {
+        border: none;
+        width: 100%;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me-details {
+        text-align: center;
+    }
+
+    .about-me .about-me-details h1,
+    .about-me .about-me-details p {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .about-me-img img {
+        width: 300px;
+    }
+
+    /* ------------REsume ------------------ */
+    .resume-container {
+        flex-direction: column;
+        overflow-y: scroll;
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    .resume-details .heading {
+        /* border: 2px solid red; */
+        margin-top: 150px;
+        width: 100%;
+    }
+
+    .resume .resume-details p {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    * {
+        /* overflow-x: hidden; */
+    }
+
+    .profile-first-container>div img {
+        top: -40%;
+    }
+
+    .projects .project-list {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+
+    .project-details {
+        /* border: 2px solid red; */
+        width: 700px;
+        padding: 0 40px;
+    }
+
+    .project-details a {
+        /* border: 2px solid red; */
+        margin-top: -20px;
+    }
+
+    .projects>h3 {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .projects>button {
+        font-size: 10px;
+        width: 100px;
+        height: 25px;
+        padding: 2px 0;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    header {
+        /* border: 2px solid red; */
+        height: 30px;
+        top: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-container {
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+    }
+
+    .about-me .about-me-details h1,
+    .about-me .about-me-details p {
+        /* border: 2px solid blue; */
+        width: calc(100% - 20%);
+        margin: auto;
+    }
+
+    .projects>button {
+        margin-top: 30px;
+    }
+
+    .about-me-img img {
+        width: 300px;
+    }
+
+    .logo-name {
+        visibility: hidden;
+    }
+
+    .resume-details .heading {
+        /* border: 2px solid red; */
+        overflow: hidden;
+        margin-top: 150px;
+        width: 70%;
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .resume .resume-details p {
+        overflow: hidden;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .profile-first-container>div img {
+        top: -20%;
+        width: 150px;
+    }
+
+    .heading-logo a>span {
+        padding: 1px 2px;
+        border: 2px solid red;
+        height: 20px;
+        margin-top: 10px;
+    }
+
+    .about-me-img img {
+        width: 200px;
+    }
+
+    .project-details {
+        /* border: 2px solid red; */
+        width: 400px;
+        padding: 0 40px;
+    }
+
+    .project-details h3 {
+        font-size: 13px;
+    }
+
+    .project-details p {
+        font-size: 12px;
+        width: 280px;
+    }
+
+    .project-details a {
+        margin: -2px;
+    }
+
+    .projects>h3 {
+        display: none;
+    }
+}
